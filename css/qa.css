@@ -1,0 +1,97 @@
+.wrapper {
+	clear: both;
+	display: block;
+	margin: 0px auto 0px auto; /*centers everything to the window width*/
+	padding: 12px 12px 12px 12px;
+	max-width: 640px;
+}
+h1 { color: #00adee; margin: 12px 0px; }
+h2 { color: #333; font-size: 1.25em; }
+h3 { color: #777; font-size: 1.0em; }
+h4 { color: #00adee; margin: 6px 0px 12px 0px;}
+p {  color: #555; line-height: 1.5em; text-align: justify; font-size: 0.875em; }
+
+/*
+ * All of these styles are for the sample post at the top
+*/
+.questionHolder{
+	margin: 12px 0px;
+	display: block;
+	width: inherit;
+	/*shadows*/
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
+	-moz-box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
+	-webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')"; /* For IE 8 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000'); /* For IE 5.5 - 7 */
+}
+.question{ padding: 12px 12px; overflow: auto; background-color: #FFF;}/*the user question starts here*/
+.question:hover{ background-color: #FFE8D8; }
+.answer{ background-color: #F2F9FF; padding: 12px 12px } /*roger's (admin) answer starts here*/
+.answer:hover{ background-color: #FFE8D8; }
+.userName{
+	color: #00adee;
+	font-size: .875em;
+	display: inline-block;
+	padding: 6px 0px;
+}
+.questionDate{ font-size: .875em; float: right; }
+.answerDate{ font-size: .875em; float: right; }
+.solved{ font-size: .875em; }
+.flag{ font-size: .875em; float: right; }
+.otherComments{
+	font-weight: bold;
+	font-size: 0.75em;
+	background-color: #555;
+	color: #F5F5F5;
+	padding: 4px 12px;
+	width: inherit;
+}
+.otherComments a { text-decoration: none; color: #FFF;}
+.commentCount{ }
+.readMoreComments{ float: right; }
+
+/*
+ * All of these styles are for the gereral topics
+*/
+.topics{
+	margin: 12px 0px;
+	width: inherit;
+	background-color: #FFF;
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
+	-moz-box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
+	-webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')"; /* For IE 8 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000'); /* For IE 5.5 - 7 */
+}
+.topic{
+	padding: 12px;
+}
+.topic:nth-child(even) { background-color: #F2F9FF; }
+.topic:hover{ background-color: #FFE8D8; }
+.topicTitle{
+	font-size: 1.25em;
+	padding: 0px 0px 4px 0px;
+	color: #00adee;
+	display: block;
+}
+.topicDescription{
+	padding: 4px 0px 4px 0px;
+	font-size: 0.875em;
+	color: #555;
+}
+.topicHistory{
+	display: inline-block;
+	padding: 4px 0px;
+	float: right;
+	font-weight: bold;
+	font-size: 0.875em;
+	color: #333;
+}
+
+@media only screen and (max-width : 640px) {
+	#article{ padding: 0px; }
+	#aside { display: inline; }
+	#aside div { margin-left: 0px;}
+	.recentVid { width: 49%; display: inline-block; font-size: 1em; }
+}

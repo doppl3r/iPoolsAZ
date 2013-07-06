@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>iPoolsAZ</title>
+	<meta name="description" content="pool service">
+	<meta name="author" content="jacob debenedetto">
+	<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/global.css">
+	<link rel="stylesheet" href="css/account.css"> <!--change this per html page-->
+	<!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body>
+	<!--Navigation Bar-->
+	<div class="header">
+		<div class="nav">
+			<a class="logo" href="index.html"></a>
+			<ul>
+				<li><a href="#">About</a>
+					<ul>
+						<li><a href="services.html">Services</a></li>
+						<li><a href="info.html">Contact Us</a></li>
+					</ul>
+				</li>
+				<li><a href="qa.html">Q&A</a>
+					<ul>
+						<li><a href="postindex.html">Repair</a></li>
+						<li><a href="postindex.html">Maintenance</a></li>
+						<li><a href="postindex.html">Chemistry</a></li>
+						<li><a href="postindex.html">Deals</a></li>
+					</ul>
+				</li>
+				<li><a href="videos.html">Videos</a></li>
+				<li><a href="shop.html">Shop</a></li>
+			</ul>
+		</div>
+		<div id="tempBreak" class="break" ></div>
+		<div class="help">
+			<ul>
+				<li><a href="#">Account</a>
+					<ul>
+						<li><a href="profile.html">Profile</a></li>
+						<li><a href="account.html">Edit Account</a></li>
+						<li><a href="#">Log Out</a></li>
+					</ul>
+				</li>
+			</ul>
+			<input class="search" type="text" name="search" placeholder="search..."/>
+			<a class="searchButton" href="#"></a>
+		</div>
+	</div>
+	
+	
+	<div class="wrapper">
+		<h1>Edit Account</h1>
+		<div class="account">
+			<div class="personalInfo">
+				<h2>Edit Profile</h2>
+				<div class="break"></div>
+				<h4>Current Info</h4>
+				<img src="img/profile_null.png" />
+				<button type="button">Change</button>
+				<p>Jacob DeBenedetto</p>
+				<p>(555) 555-5555</p>
+				<div class="break"></div>
+				<form>
+					<input id="firstName" type="text" name="first-name" placeholder="First Name"/>
+					<input id="lastName" type="text" name="last-name" placeholder="Last Name"/>
+					<input id="phone" type="text" name="phone" placeholder="Phone"/>
+					<input type="button" onclick="submitButton()" value="Update Profile">
+				</form>
+			</div>
+			<div class="accountInfo">
+				<h2>Edit Account Info</h2>
+				<div class="break"></div>
+				<p>Your new password must consist of <strong>8 or more</strong> characters. Do not share this password with anyone!</p>
+				<div class="break"></div>
+				<form>
+					<input id="oldPassword" type="text" name="old-password" placeholder="Old Password"/>
+					<input id="newPassword1" type="text" name="new-password-1" placeholder="New Password"/>
+					<input id="newPassword2" type="text" name="new-password-2" placeholder="Confirm New Password"/>
+					<input type="button" onclick="submitButton()" value="Update Password">
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<div class="break"></div>
+	<div class="footer">Copyright (c) 2013 ipoolsaz.com | 1.480.495.2334 | Pool Service | Maintenance | Supplies</div>
+</body>
+</html>

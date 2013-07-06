@@ -1,0 +1,52 @@
+.wrapper {
+	display: block;
+	margin: 0px auto 0px auto; /*centers everything to the window width*/
+	padding: 12px 12px 12px 12px;
+	max-width: 640px;
+	min-width: 296px;
+}
+
+
+
+h1 { color: #00adee; margin: 12px 0px; }
+h2 { color: #333; font-size: 1.25em; text-align: center; }
+h3 { color: #777; font-size: 1.0em; }
+h4 { color: #00adee; margin: 6px 0px 12px 0px;}
+p {  color: #555; line-height: 1.5em; font-size: 0.875em; }
+
+.account {
+	margin: 0px auto;
+	width: inherit;
+	background-color: #FFF;
+	border-radius: 10px;
+	/*shadows*/
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
+	-moz-box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
+	-webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')"; /* For IE 8 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000'); /* For IE 5.5 - 7 */
+}
+.personalInfo {
+	text-align: center;
+	width: 50%;
+	padding: 12px;
+	display: table-cell;
+	border-right: 1px solid #CCC;
+}
+.personalInfo img { border-radius: 3px; display: block; margin: 0px auto; }
+.personalInfo button { font-size: 0.75em; width: 64px; margin-bottom: 6px; }
+.personalInfo p {  }
+.accountInfo {
+	text-align: left; 
+	width: 296px;
+	padding: 12px;
+	display: table-cell;
+	border-top: none;
+}
+
+@media only screen and (max-width : 664px) {
+	.wrapper { width: 296px; } /*   (320 - (padding * 2))   */
+	.personalInfo{ width: 272px; display: block; border-right: none; } /*  (wrapper - (padding * 2)) */
+	.accountInfo { width: 272px; display: block; border-top: 1px solid #CCC; }
+	form input, form textarea { margin: 4px auto; }
+}

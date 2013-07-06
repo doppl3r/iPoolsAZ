@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>iPoolsAZ</title>
+	<meta name="description" content="pool service">
+	<meta name="author" content="jacob debenedetto">
+	<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/global.css">
+	<link rel="stylesheet" href="css/post.css"> <!--change this per html page-->
+	<!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body>
+	<!--Navigation Bar-->
+	<div class="header">
+		<div class="nav">
+			<a class="logo" href="index.html"></a>
+			<ul>
+				<li><a href="#">About</a>
+					<ul>
+						<li><a href="services.html">Services</a></li>
+						<li><a href="info.html">Contact Us</a></li>
+					</ul>
+				</li>
+				<li><a href="qa.html">Q&A</a>
+					<ul>
+						<li><a href="postindex.html">Repair</a></li>
+						<li><a href="postindex.html">Maintenance</a></li>
+						<li><a href="postindex.html">Chemistry</a></li>
+						<li><a href="postindex.html">Deals</a></li>
+					</ul>
+				</li>
+				<li><a href="videos.html">Videos</a></li>
+				<li><a href="shop.html">Shop</a></li>
+			</ul>
+		</div>
+		<div id="tempBreak" class="break" ></div>
+		<div class="help">
+			<ul>
+				<li><a href="#">Account</a>
+					<ul>
+						<li><a href="profile.html">Profile</a></li>
+						<li><a href="account.html">Edit Account</a></li>
+						<li><a href="#">Log Out</a></li>
+					</ul>
+				</li>
+			</ul>
+			<input class="search" type="text" name="search" placeholder="search..."/>
+			<a class="searchButton" href="#"></a>
+		</div>
+	</div>
+	
+	
+	<div class="wrapper">
+		<h1>Chemistry</h1>
+		<h3>How to balance chemicals</h3>
+		
+		 <!--question interface-->
+		<div class="questionHolder">
+			<div class="question">
+				<span class="questionDate">[mm/dd/yy]: 23:59</span>
+				<h3>Question Title</h3>
+				<span class="userName">Submitted by: bobman123</span>
+				<p>I have a problem with my pool. I can't figure out why my pool turns red when I put red die in it. Shouldn't it turn purple when it mixes with blue? I'm no math major, but I can mostly guess what color it will be on impact. Can you answer this problem?</p>
+			</div>
+			<div class="answer"> <!--admin response goes here-->
+				<span class="answerDate">[mm/dd/yy]: 23:59</span>
+				<h3>Answer</h3>
+				<span class="userName">re[bobman123]: Roger</span>
+				<p>I'm sorry to hear you are having trouble with tempering your pool colors. I highly recommend avoiding additive color dies to your pool. Although it may seem harmless, the dyes tend to alter your organic chemistry.</p>
+			</div>
+			<div class="editPost"> <!--read more user comments-->
+				<span class="flagPost">[Flag Inappropriate]</span><span class="solvePost">[Solved]</span>
+			</div>
+		</div>
+		<div class="break"></div>
+		
+		<!--write post here-->
+		<div class="writeComment">
+			<form>
+				<textarea id="text" type="text" name="your-message" placeholder="comment..." ></textarea>
+				<input type="button" value="Post">
+			</form>
+		</div>
+		<div class="break"></div>
+		
+		<!--comments will stack here-->
+		<div class="comments" id="comments">
+			<div class="comment" id="comment"> <!--the id will be give paramenters by the server-->
+				<span class="commentID">commentID_241235</span>
+				<h4>bobman123</h4>
+				<span class="replyToID">replied to: Question</span>
+				<span class="replyString">I'm sorry if my question sounded weird. I'm really new to this pool stuff.</span>
+				<a href="#text" class="replyToComment" onclick="postComment('commentID_241235')">Reply</a>
+			</div>
+			<div class="comment"> <!--the id will be give paramenters by the server-->
+				<span class="commentID">commentID_200232</span>
+				<h4>Roger</h4>
+				<span class="replyToID">replied to: [commentID_241235]</span>
+				<span class="replyString">You've gotta' start somewhere. I hope I was able to help you with your problem in a reasonable time span. Be sure to ask about anything!</span>
+				<a href="#text" class="replyToComment" onclick="postComment('commentID_200232')">Reply</a>
+			</div>
+			<div class="comment"> <!--the id will be give paramenters by the server-->
+				<span class="commentID">commentID_201251</span>
+				<h4>danielBoros</h4>
+				<span class="replyToID">replied to: [commentID_241235]</span>
+				<span class="replyString">I've been working in the pool business for quite a long time. I still can't figure out why bees love to suicide into the water filter. To be honest, I'm getting real tired of grabbing handfuls of bees out of my filter each day. I wish I could put anti-bug repellent in my pump, but that might kill my children if they go swimming.</span>
+				<a href="#text" class="replyToComment" onclick="postComment('commentID_201251')">Reply</a>
+			</div>
+			<div class="comment"> <!--the id will be give paramenters by the server-->
+				<span class="commentID">commentID_233334</span>
+				<h4>jacobDeBenedetto</h4>
+				<span class="replyToID">replied to: Question</span>
+				<span class="replyString">I tried adding orange dyes into mine and it made my pool orange. I highly recommend doing that; it really brings out the orange in pools</span>
+				<a href="#text" class="replyToComment" onclick="postComment('commentID_233334')">Reply</a>
+			</div>
+		</div>
+	</div>
+	<div class="break"></div>
+	<div class="footer">Copyright (c) 2013 ipoolsaz.com | 1.480.495.2334 | Pool Service | Maintenance | Supplies</div>
+	
+	<div id="formReply">
+		<form>
+			<textarea id="text" type="text" name="your-message" placeholder="Tell us something" ></textarea>
+			<input type="button" onclick="submitButton()" value="Submit">
+		</form>
+	</div>
+	
+	<!--Script change who receives the message-->
+	<script>
+		var name = "";
+		function postComment(commentID) {
+			name = document.getElementById("text");
+			name.setAttribute("placeholder","@"+commentID);
+		}
+	</script>
+</body>
+</html>

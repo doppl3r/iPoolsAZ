@@ -1,0 +1,42 @@
+.wrapper {
+	display: block;
+	margin: 0px auto 0px auto; /*centers everything to the window width*/
+	padding: 12px 12px 12px 12px;
+	max-width: 640px;
+}
+h1 { color: #00adee; margin: 12px 0px 6px 0px;}
+h2 { color: #333; font-size: 1.25em; }
+h3 { color: #777; font-size: 1.0em; margin: 0px 0px 12px 0px;}
+h4 { color: #00adee; margin: 6px 0px 12px 0px;}
+p {  color: #555; line-height: 1.5em; text-align: justify; font-size: 0.875em; }
+
+.submitBox {
+	background-color: #FFF;
+	border-radius: 10px;
+	padding: 12px;
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
+	-moz-box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
+	-webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')"; /* For IE 8 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000'); /* For IE 5.5 - 7 */
+}
+.submitBox form { text-align: center; }
+.submitBox form input { }
+.submitBox form button { margin: 12px auto; }
+.submitBox img {
+	vertical-align: top;
+	margin: 0px 0px;
+	border-radius: 5px;
+}
+#submitPostTitle{ text-align: left; }
+#submitPostQuestion{ min-height: 128px; }
+#pics { display: inline-block; width: auto; margin: 12px auto 0px auto; text-align: center;}
+#selectedPics, #selectedPics p { display: block; text-align: center; }
+
+
+
+
+@media only screen and (max-width : 664px) { /* 640 + (padding * 2)  */
+	
+	
+}

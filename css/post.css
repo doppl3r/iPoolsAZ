@@ -1,0 +1,95 @@
+.wrapper {
+	display: block;
+	margin: 0px auto 0px auto; /*centers everything to the window width*/
+	padding: 12px 12px 12px 12px;
+	max-width: 640px;
+}
+h1 { color: #00adee; margin: 12px 0px 6px 0px;}
+h2 { color: #333; font-size: 1.25em; }
+h3 {  font-size: 1.0em; margin: 0px 0px 6px 0px;}
+h4 { color: #00adee; margin: 0px 0px 0px 0px;}
+p {  color: #555; line-height: 1.5em; text-align: justify; font-size: 0.875em; }
+
+/* This is the current question */
+.questionHolder{
+	margin: 12px 0px;
+	display: block;
+	width: inherit;
+	/*shadows*/
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
+	-moz-box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
+	-webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')"; /* For IE 8 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000'); /* For IE 5.5 - 7 */
+}
+.question{ padding: 12px 12px; overflow: auto; background-color: #FFF;}/*the user question starts here*/
+.question:hover{ background-color: #FFE8D8; }
+.answer{ background-color: #F2F9FF; padding: 12px 12px } /*roger's (admin) answer starts here*/
+.answer:hover{ background-color: #FFE8D8; }
+.userName{
+	color: #00adee;
+	font-size: .875em;
+	display: inline-block;
+	padding: 6px 0px;
+}
+.questionDate{ font-size: .875em; float: right; }
+.answerDate{ font-size: .875em; float: right; }
+.editPost{
+	font-weight: bold;
+	font-size: 0.75em;
+	background-color: #555;
+	color: #F5F5F5;
+	padding: 4px 12px;
+}
+.solvePost{ float: right; }
+.flagPost{ }
+
+/* Stylize the write-a-comment div */
+.writeComment {  }
+.writeComment form textarea { height: 128px; max-width: 640px; min-width: 128px; }
+.writeComment form input { max-width: 128px; }
+
+/* Style each comment*/
+.comments {} /*contains all the comments*/
+.comment { /*styles each comment individually*/
+	margin-bottom: 12px;
+	background-color: #FFF;
+	border-radius: 16px;
+	border-left:   5px solid #555;
+	border-right:  5px solid #555;
+	border-top:    1px dashed #555;
+	border-bottom: 1px dashed #555;
+	padding: 12px;
+}
+/*.comment:nth-child(even){ border-color: #00adee; }*/
+.replyString {
+	font-size: .75em;
+	display: block;
+	color: #555;
+}
+.replyToComment{
+	font-size: .75em;
+	font-weight: bold;
+	color: #333;
+	padding: 6px 0px;
+	text-decoration: none;
+}
+.replyToComment:active { color: #00adee; }
+.replyToID{
+	color: #999;
+	display: block;
+	font-size: .75em;
+	padding: 6px 0px 6px 0px;
+}
+.commentID{
+	font-size: .75em;
+	color: #999;
+	float: right;
+}
+#formReply{
+	display: none;
+}
+
+@media only screen and (max-width : 664px) { /* 640 + (padding * 2)  */
+	
+}
