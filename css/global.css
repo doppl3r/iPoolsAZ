@@ -76,6 +76,7 @@ body {
 #tempBreak { display: none;}
 .help {	display: inline-block; float: right; }
 .help a { text-decoration: none; }
+.help ul li a {	background-color: #ec1c23; color: #FFF; }
 .search{
 	width: 196px;
 	height: 24px;
@@ -85,7 +86,7 @@ body {
 .searchButton {
 	width: 24px;
 	height: 24px;
-	margin: 13px 4px 13px 0px;
+	margin: 13px 12px 13px 0px;
 	border-radius: 12px;
 	background-image: url("../img/search.png");
 	display: inline-block;
