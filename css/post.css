@@ -1,3 +1,5 @@
+/*answers.css.scss*/
+
 .wrapper {
 	display: block;
 	margin: 0px auto 0px auto; /*centers everything to the window width*/
@@ -34,15 +36,33 @@ p {  color: #555; line-height: 1.5em; text-align: justify; font-size: 0.875em; }
 }
 .questionDate{ font-size: .875em; float: right; }
 .answerDate{ font-size: .875em; float: right; }
-.editPost{
+
+.solvedSpan{
+	font-size: .75em;
 	font-weight: bold;
-	font-size: 0.75em;
-	background-color: #555;
-	color: #F5F5F5;
-	padding: 4px 12px;
+	color: #333;
+	padding: 4px 0px 0px 0px;
+	text-decoration: none;
+	float: right;
 }
-.solvePost{ float: right; }
-.flagPost{ }
+.solvedIcon{
+	float: right;
+	width: 12px;
+	height: 12px;
+	background-image: url("../img/solved.png");
+	margin: 2px 0px 0px 4px;
+	display: block;
+}
+.unsolvedIcon{
+	float: right;
+	width: 12px;
+	height: 12px;
+	background-image: url("../img/unsolved.png");
+	margin: 2px 0px 0px 4px;
+	display: block;
+}
+
+.flag{ font-size: .75em; font-weight: bold; }
 
 /* Stylize the write-a-comment div */
 .writeComment {  }

@@ -9,7 +9,34 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/global.css">
 	<link rel="stylesheet" href="css/videos.css"> <!--change this per html page-->
-	<!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="js/magnific-popup.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+				disableOn: 0,
+				type: 'iframe',
+				mainClass: 'mfp-fade',
+				removalDelay: 160,
+				preloader: false,
+		
+				fixedContentPos: false
+			});
+			$.extend(true, $.magnificPopup.defaults, {  
+				iframe: {
+					patterns: {
+					   youtube: {
+						  index: 'youtube.com/', 
+						  id: 'v=', 
+						  src: 'http://www.youtube.com/embed/%id%?autoplay=1' 
+					  }
+					}
+				}
+			});
+		});
+		
+	</script>
 </head>
 <body>
 	<!--Navigation Bar-->
@@ -54,11 +81,46 @@
 	
 	<div class="wrapper">
 		<h1>Videos</h1>
-		<div class="serviceHolder">
+		<h3>Watch The latest videos from our experts</h3>
+		<div class="break"></div>
+		<div class="vIndex divShadow">
+			<h2>Browse for Videos</h2>
+
+			<div class="myButton">recent</div>
+			<div class="myButton">oldest</div>
+			<div class="myButton">most views</div>
+			<div class="myButton">randomize</div>
+			<div class="break"></div>
 			
+			<div class="vDiv">
+				<a class="popup-youtube" href="http://www.youtube.com/watch?v=3onG_EmPfRY">
+					<img class="vSample" src="img/nullVid.png" />
+				</a>
+				<span class="vTitle">This is just a place holder for a video title from youtube</span>
+				<span class="vViews">297 views</span>
+				<span class="vTime">3 days ago</span>
+				<div class="break"></div>
+			</div>
+			<div class="vDiv">
+				<a class="popup-youtube" href="http://www.youtube.com/watch?v=9J3lIG7axJA">
+					<img class="vSample" src="img/nullVid.png" />
+				</a>
+				<span class="vTitle">This is just a place holder for a video title from youtube</span>
+				<span class="vViews">297 views</span>
+				<span class="vTime">3 days ago</span>
+				<div class="break"></div>
+			</div>
+			<div class="vDiv">
+				<a class="popup-youtube" href="http://www.youtube.com/watch?v=rL2XPPVcI8A">
+					<img class="vSample" src="img/nullVid.png" />
+				</a>
+				<span class="vTitle">This is just a place holder for a video title from youtube</span>
+				<span class="vViews">297 views</span>
+				<span class="vTime">3 days ago</span>
+				<div class="break"></div>
+			</div>
 		</div>
 	</div>
-	
 	<div class="break"></div>
 	<div class="footer">Copyright (c) 2013 ipoolsaz.com | 1.480.495.2334 | Pool Service | Maintenance | Supplies</div>
 </body>

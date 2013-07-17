@@ -4,10 +4,10 @@
 	padding: 12px 12px 12px 12px;
 	max-width: 640px;
 }
-h1 { color: #00adee; margin: 12px 0px 6px 0px;}
+h1 { color: #00adee; margin: 12px 0px 6px 0px; }
 h2 { color: #333; font-size: 1.25em; }
-h3 { color: #777; font-size: 1.0em; margin: 0px 0px 12px 0px;}
-h4 { color: #00adee; margin: 6px 0px 12px 0px;}
+h3 { color: #777; font-size: 1.0em; margin: 0px 0px 12px 0px; }
+h4 { color: #00adee; margin: 6px 0px 12px 0px; }
 p {  color: #555; line-height: 1.5em; text-align: justify; font-size: 0.875em; }
 
 

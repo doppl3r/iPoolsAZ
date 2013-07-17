@@ -1,139 +1,406 @@
 body {
-	background-color: #F5F5F5;
-	font-size: 1em;
+  background-color: #F5F5F5;
+  font-size: 1em;
 }
+
 .header {
-	background-color: #FFF;
-	width: 100%;
-	height: 50px;
-	min-width: 320px;
-	display: block;
-	/*universal properties for box shadow*/
-	box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
-	-moz-box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
-	-webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
-	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')"; /* For IE 8 */
-	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000'); /* For IE 5.5 - 7 */
+  background-color: #FFF;
+  width: 100%;
+  height: 50px;
+  min-width: 320px;
+  display: block;
+  /*universal properties for box shadow*/
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
+  -moz-box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')"; /* For IE 8 */
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000'); /* For IE 5.5 - 7 */
 }
-.nav { float: left; }
 
-
+.nav {
+  float: left;
+}
 
 /*Logo Anchor*/
 .logo {
-	background-image: url("../img/logo_small.png");
-	width: 50px;
-	height: 40px;
-	display: inline-block;
-	vertical-align: top;
-	margin: 5px 2px 5px 12px;
+  background-image: url("../img/logo_small.png");
+  width: 50px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 5px 2px 5px 12px;
 }
-
-
 
 /*Drop-down nav bar*/
 .header ul {
-	display: inline-block;
-    font-size: 1.0em;
-	font-weight: bold;
-    margin: 0px auto;
+  display: inline-block;
+  font-size: 1.0em;
+  font-weight: bold;
+  margin: 0px auto;
 }
-.header ul li {	line-height: 50px; display: table-cell; }
-.header li ul { display: none; }
+
+.header ul li {
+  line-height: 50px;
+  display: table-cell;
+}
+
+.header li ul {
+  display: none;
+}
+
 .header ul li a {
-    display: block;
-    text-decoration: none;
-    color: #333;
-    padding: 0px 6px;
+  display: block;
+  text-decoration: none;
+  color: #333;
+  padding: 0px 6px;
 }
-.header ul li a:hover { background-color: #00adee; color: #FFF; }
-.header li:hover ul { display: block; position: absolute; }
-.header li:hover ul li { display: block; min-width: 128px; }
+
+.header ul li a:hover {
+  background-color: #00adee;
+  color: #FFF;
+}
+
+.header li:hover ul {
+  display: block;
+  position: absolute;
+}
+
+.header li:hover ul li {
+  display: block;
+  min-width: 128px;
+}
+
 .header li:hover li {
-	font-size: .875em;
-	line-height: 24px;
-	border-top: 1px solid #FFF;
-	border-color: transparent;
-	margin-top: 2px;
-	box-shadow: 0px 5px 5px rgba(0, 0, 0, .5);
-	-moz-box-shadow: 0px 5px 5px rgba(0, 0, 0, .5);
-	-webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, .5);
-	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')"; /* For IE 8 */
-	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000'); /* For IE 5.5 - 7 */
+  font-size: .875em;
+  line-height: 24px;
+  border-top: 1px solid #FFF;
+  border-color: transparent;
+  margin-top: 2px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, .5);
+  -moz-box-shadow: 0px 5px 5px rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, .5);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')"; /* For IE 8 */
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000'); /* For IE 5.5 - 7 */
 }
+
 .header li:hover a {
-	background-color: #333;
-	background-color: rgba(50,50,50,.9);
-	color: #FFF;
+  background-color: #333;
+  background-color: rgba(50, 50, 50, .9);
+  color: #FFF;
 }
-.header li:hover li { font-size: .75em; }
-.header li:hover li a:hover { background-color: #00adee; }
 
+.header li:hover li {
+  font-size: .75em;
+}
 
-
+.header li:hover li a:hover {
+  background-color: #00adee;
+}
 
 /*Seach bar*/
-#tempBreak { display: none;}
-.help {	display: inline-block; float: right; }
-.help a { text-decoration: none; }
-.help ul li a {	background-color: #ec1c23; color: #FFF; }
-.search{
-	width: 196px;
-	height: 24px;
-	vertical-align: top;
-	margin: 10px 0px 0px 0px;
+#tempBreak {
+  display: none;
 }
+
+.help {
+  display: inline-block;
+  float: right;
+}
+
+.help a {
+  text-decoration: none;
+}
+
+.search {
+  width: 196px;
+  height: 24px;
+  vertical-align: top;
+  margin: 10px 0px 0px 0px;
+}
+
 .searchButton {
-	width: 24px;
-	height: 24px;
-	margin: 13px 12px 13px 0px;
-	border-radius: 12px;
-	background-image: url("../img/search.png");
-	display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin: 13px 4px 13px 0px;
+  border-radius: 12px;
+  background-image: url("search.png");
+  display: inline-block;
 }
-.searchButton:hover { background-color: #00adee; background-image: url("../img/search_hover.png"); }
+
+.searchButton:hover {
+  background-color: #00adee;
+  background-image: url("search_hover.png");
+}
+
+/*Log in*/
+.login {
+  color: #333;
+  display: inline-block;
+  line-height: 50px;
+  font-weight: bold;
+  padding: 0px 6px;
+  vertical-align: top;
+}
+
+.login:hover {
+  background-color: #00adee;
+  color: #FFF;
+}
 
 .footer {
-	text-align: center;
-	margin: 4px auto;
-	font-size: 0.75em;
-	color: #777;
+  text-align: center;
+  margin: 4px auto;
+  font-size: 0.75em;
+  color: #777;
 }
-.wrapper form input, .wrapper form textarea { /*Alter all forms*/
-	display: block;
-	margin: 4px 0px;
-	width: 100%;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	padding:5px;
-	border:1px solid #999;
+
+.wrapper form input, .wrapper form textarea {
+  /*Alter all forms*/
+  display: block;
+  margin: 4px 0px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px;
+  border: 1px solid #999;
 }
+.wrapper form input:hover {
+  background-color:#FFF;
+}
+
 .break {
-	/*this is that nice line you see breaking up content*/
-	margin: 8px 0px 8px 0px;
-	display: inline-block;
-	width: 100%;
-	height: 0px;
-	border-top: 1px solid #E5E5E5;
-	border-bottom: 1px solid #FFF;
+  /*this is that nice line you see breaking up content*/
+  margin: 8px 0px 8px 0px;
+  display: inline-block;
+  width: 100%;
+  height: 0px;
+  border-top: 1px solid #E5E5E5;
+  border-bottom: 1px solid #FFF;
 }
-a { color: #00adee; }
-@media only screen and (max-width : 640px) {
-	.logo { margin-left: 0px; }
-	.header { height: auto; margin: 0px auto; text-align: center;}
-	.nav { float: none; }
-	.header li:hover ul { display: block; width: 100%; left: 0px; }
-	.header li { font-size: 0.875em; }
-	.header li:hover li {
-		margin: 2px 0px;
-		text-align: center;
-		line-height: 50px;
-		font-size: 1.0em;
-	}
-	#tempBreak { display: block; margin: -3px 0px 6px 0px; }
-	.help { float: none; margin: 0px auto; width: 100%; line-height: 24px;}
-	.help ul li { line-height: 24px; }
-	.search { margin: 0px; height: 18px; }
-	.searchButton { margin: 0px; }
+
+.tab, .tab2, .tab3 {
+  display: table-cell;
+  color: #FFF;
+  line-height: 24px;
+  padding: 0px 6px;
+  background-color: #555;
+  font-size: 0.75em;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  /*corner rounders*/
+  -moz-border-radius-topright: 12px;
+  border-top-right-radius: 12px;
+  -moz-border-radius-topleft: 12px;
+  border-top-left-radius: 12px;
+}
+
+.tab:hover, .tab3:hover {
+  background-color: #ec1c23;
+}
+
+.tab a, .tab2 a, .tab3 a {
+  color: #FFF;
+  text-decoration: none;
+}
+.tab2, .tab3{
+  display: inline-block;
+  background-color: #555;
+  margin: 0px 0px 4px 0px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.tab3 {
+  background-color: #76CC1E;
+}
+.tab2 img, .tab3 img {
+  vertical-align: middle;
+}
+
+a {
+  color: #00adee; /*blue*/
+}
+
+#flashAlertDiv {
+  overflow: auto;
+  padding: 6px 6px 4px 6px; /*4 fixes floated exit button issue*/
+  background-color: #ec1c23;
+  display: block;
+  text-align: center;
+  /*add a drop shadow*/
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
+  -moz-box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')"; /* For IE 8 */
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000'); /* For IE 5.5 - 7 */
+}
+
+#flashAlertDiv:hover {
+  background-color: #AD141C;
+  cursor: default;
+}
+
+#flash_alert {
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  font-size: 0.875em;
+  font-weight: bold;
+  color: #FFF;
+}
+
+#flashNoticeDiv {
+  overflow: auto;
+  padding: 6px 6px 4px 6px;
+  background-color: #76CC1E;
+  display: block;
+  text-align: center;
+}
+
+#flashNoticeDiv:hover {
+  background-color: #6AB51B;
+  cursor: default;
+}
+
+#flash_notice {
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  font-size: 0.875em;
+  font-weight: bold;
+  color: #FFF;
+}
+
+.exitButton {
+  margin: 0px 0px;
+  float: right;
+  width: 12px;
+  height: 12px;
+  background: image-url("exit.png");
+}
+
+.exitButton:hover {
+  cursor: pointer;
+  cursor: hand;
+  border-radius: 6px;
+  background-color: #000;
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.myButton {
+  text-align: center;
+  vertical-align: top;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: normal;
+  margin: 0px 0px 4px 0px;
+  padding: 6px 4px 5px 4px; /*perfect 24px height*/
+  color: #6C777F;
+  background-color: #E0EAF1;
+  border-bottom: 1px solid #B3CEE1;
+  border-right: 1px solid #B3CEE1;
+}
+
+.myButton:hover {
+  background-color: #B3CEE1;
+}
+.myButton a {
+  color: #6C777F;
+  text-decoration: none;
+  text-align: center;
+}
+
+.divShadow {
+  /*add a drop shadow*/
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
+  -moz-box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')"; /* For IE 8 */
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000'); /* For IE 5.5 - 7 */
+}
+
+@media only screen and (max-width: 640px) {
+  .logo {
+    margin-left: 0px;
+  }
+
+  .header {
+    height: auto;
+    margin: 0px auto;
+    text-align: center;
+  }
+
+  .nav {
+    float: none;
+  }
+
+  .header li:hover ul {
+    display: block;
+    width: 100%;
+    left: 0px;
+  }
+
+  .header li {
+    font-size: 0.875em;
+  }
+
+  .header li:hover li {
+    margin: 2px 0px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.0em;
+  }
+
+  #tempBreak {
+    display: block;
+    margin: -3px 0px 6px 0px;
+  }
+
+  .help {
+    float: none;
+    margin: 0px auto;
+    width: 100%;
+    line-height: 24px;
+  }
+
+  .help ul li {
+    line-height: 24px;
+  }
+
+  .search {
+    margin: 0px;
+    height: 18px;
+  }
+
+  .searchButton {
+    margin: 0px;
+  }
+}
+
+.simple_form label {
+  float: left;
+  width: 100px;
+  text-align: right;
+  margin: 2px 10px;
+}
+
+.simple_form div.input {
+  margin-bottom: 10px;
+}
+
+.simple_form div.boolean, .simple_form input[type='submit'] {
+  width: 100%;
+}
+
+.simple_form div.boolean label, .simple_form label.collection_radio {
+  float: none;
+  margin: 0;
+}
+
+.simple_form label.collection_radio {
+  margin-right: 10px;
+  margin-left: 2px;
 }

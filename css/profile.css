@@ -11,11 +11,13 @@
 h1 { color: #00adee; margin: 12px 0px; }
 h2 { color: #333; font-size: 1.25em; text-align: center; }
 h3 { color: #777; font-size: 1.0em; }
-h4 { color: #00adee; margin: 6px 0px 12px 0px;}
+h4 { color: #00adee; margin: 0px 0px 0px 0px;}
 p {  color: #555; line-height: 1.5em; font-size: 0.875em; }
 
-.serviceHolder {
-	margin: 0px auto;
+.profileInfo {
+	overflow: auto;
+	margin: 0px auto 12px auto;
+	padding: 12px;
 	width: inherit;
 	background-color: #FFF;
 	border-radius: 10px;
@@ -26,11 +28,19 @@ p {  color: #555; line-height: 1.5em; font-size: 0.875em; }
 	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')"; /* For IE 8 */
 	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000'); /* For IE 5.5 - 7 */
 }
+.profileInfo span {
+	margin: 0px 12px 0px 0px;
+	font-size: 0.75em;
+	font-weight: bold;
+	display: block;
+	color: #777;
+}
+.profileInfo img { margin-right: 12px; float: left; }
+.profileHistory {
+	
+}
 
 
 @media only screen and (max-width : 664px) {
-	.wrapper { width: 296px; } /*   (320 - (padding * 2))   */
-	.personalInfo{ width: 272px; display: block; border-right: none; } /*  (wrapper - (padding * 2)) */
-	.accountInfo { width: 272px; display: block; border-top: 1px solid #CCC; }
-	form input, form textarea { margin: 4px auto; }
+	
 }

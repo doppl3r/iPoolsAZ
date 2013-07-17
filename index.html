@@ -13,6 +13,12 @@
 </head>
 <body>
 	<!--Navigation Bar-->
+	<div id="flashNoticeDiv" onclick="hideNotice()">
+		<div id="flash_notice">
+			You have successfully logged into your user account!
+		</div>
+		<div class="exitButton"></div>
+	</div>
 	<div class="header">
 		<div class="nav">
 			<a class="logo" href="index.html"></a>
@@ -50,8 +56,11 @@
 			<a class="searchButton" href="#"></a>
 		</div>
 	</div>
+	
+	
 	<!--Wrapper-->
 	<div class="wrapper">
+		
 		<div id="article">
 			<!--Basic slideshow goes here-->
 			<div id="slideShow">
@@ -168,5 +177,10 @@
 	</div>
 	<div class="break"></div>
 	<div class="footer">Copyright (c) 2013 ipoolsaz.com | 1.480.495.2334 | Pool Service | Maintenance | Supplies</div>
+	<script>
+		function hideNotice() {
+			document.getElementById("flashNoticeDiv").style.display = "none";
+		}
+	</script>
 </body>
 </html>

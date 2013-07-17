@@ -1,3 +1,5 @@
+/*questions.css.scss*/
+
 .wrapper {
 	display: block;
 	margin: 0px auto 0px auto; /*centers everything to the window width*/
@@ -7,28 +9,11 @@
 h1 { color: #00adee; margin: 12px 0px 6px 0px; }
 h2 { color: #333; font-size: 1.25em; }
 h3 {  font-size: 1.0em; margin: 0px 0px 6px 0px; display: inline-block; }
-h4 { color: #00adee; margin: 0px 0px 6px 0px; display: table-cell; }
+h4 { color: #00adee; margin: 0px 0px 6px 0px;  }
 p {  color: #555; line-height: 1.5em; text-align: justify; font-size: 0.875em; }
 
-.newQuestion {
-	display: table-cell;
-	color: #FFF;
-	line-height: 30px;
-	padding: 0px 8px;
-	background-color: #555;
-	font-size: 0.875em;
-	font-weight: bold;
-	text-align: center;
-	text-decoration: none;
-	float: right;
-	/*corner rounders*/
-	-moz-border-radius-topright: 12px;
-	border-top-right-radius: 12px;
-	-moz-border-radius-topleft: 12px;
-	border-top-left-radius: 12px;
-}
 .postQuestions { /*contains all the comments*/
-	float: left;
+	width: 100%;
 	display: block;
 	box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
 	-moz-box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
@@ -44,30 +29,29 @@ p {  color: #555; line-height: 1.5em; text-align: justify; font-size: 0.875em; }
 	padding: 12px;
 }
 .postQuestion:nth-child(even){ background-color: #F2F9FF; }
+.postQuestion:hover {
+	background-color: #FFE8D8;
+}
 .postQuestionMessage {
-	text-overflow: ellipsis;
-	word-wrap: break-word;
-	overflow: hidden;
-	max-height: 2.05em;
-	font-size: 0.875em;
+	font-size: 0.75em;
 	font-weight: bold;
 	display: block;
-	color: #00adee;
+	padding: 0px 0px 2px 0px;
+	color: #999;
 }
 .postQuestionComments{
 	font-size: .75em;
 	font-weight: bold;
 	color: #333;
-	padding: 6px 0px;
+	padding: 0px 0px;
 	text-decoration: none;
 }
 .postQuestionUser{
 	font-size: .75em;
 	font-weight: bold;
-	color: #999;
-	padding: 6px 0px;
+	color: #00adee;
+	padding: 0px 0px;
 	text-decoration: none;
-	margin-left: 12px;
 }
 .postQuestionSolved{
 	font-size: .75em;
@@ -82,7 +66,7 @@ p {  color: #555; line-height: 1.5em; text-align: justify; font-size: 0.875em; }
 	width: 12px;
 	height: 12px;
 	background-image: url("../img/solved.png");
-	margin: 4px 0px 0px 4px;
+	margin: 2px 0px 0px 4px;
 	display: block;
 }
 .postQuestionUnSolvedIcon{
@@ -90,31 +74,36 @@ p {  color: #555; line-height: 1.5em; text-align: justify; font-size: 0.875em; }
 	width: 12px;
 	height: 12px;
 	background-image: url("../img/unsolved.png");
-	margin: 4px 0px 0px 4px;
+	margin: 2px 0px 0px 4px;
 	display: block;
 }
 .questionIcon {
-	float: left;
 	width: 24px;
 	height: 24px;
 	background-image: url("../img/question.png");
-	margin: 1px 12px 0px 0px;
-	display: block;
+	margin: 0px 4px 4px 0px;
+	display: inline-block;
 }
 .notificationIcon {
-	float: left;
 	width: 24px;
 	height: 24px;
 	background-image: url("../img/notification.png");
-	margin: 1px 12px 0px 0px;
-	display: block;
+	margin: 0px 4px 4px 0px;
+	display: inline-block;
 }
 .postQuestionReply:active { color: #00adee; }
 .postQuestionTime{
 	float: right;
 	font-size: .75em;
 	color: #999;
-	padding-left: 12px;
+}
+.postQuestionTitle {
+	color: #00adee;
+	font-size: 1em;
+	font-weight: bold;
+	vertical-align: top;
+	display: inline-block;
+	margin: 5px 0px;
 }
 
 @media only screen and (max-width : 664px) { /* 640 + (padding * 2)  */

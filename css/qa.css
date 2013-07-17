@@ -1,3 +1,5 @@
+/* topics.css.scss */
+
 .wrapper {
 	clear: both;
 	display: block;
@@ -7,8 +9,8 @@
 }
 h1 { color: #00adee; margin: 12px 0px; }
 h2 { color: #333; font-size: 1.25em; }
-h3 { color: #777; font-size: 1.0em; }
-h4 { color: #00adee; margin: 6px 0px 12px 0px;}
+h3 {  font-size: 1.0em; margin: 0px 0px 6px 0px; display: inline-block; }
+h4 { color: #999; margin: 0px 0px 6px 0px; display: inline-block; }
 p {  color: #555; line-height: 1.5em; text-align: justify; font-size: 0.875em; }
 
 /*
@@ -38,7 +40,7 @@ p {  color: #555; line-height: 1.5em; text-align: justify; font-size: 0.875em; }
 .questionDate{ font-size: .875em; float: right; }
 .answerDate{ font-size: .875em; float: right; }
 .solved{ font-size: .875em; }
-.flag{ font-size: .875em; float: right; }
+.flag{ font-size: .75em; font-weight: bold; }
 .otherComments{
 	font-weight: bold;
 	font-size: 0.75em;
@@ -54,10 +56,10 @@ p {  color: #555; line-height: 1.5em; text-align: justify; font-size: 0.875em; }
 /*
  * All of these styles are for the gereral topics
 */
+.newTopic:hover { background-color: #ec1c23; }
 .topics{
-	margin: 12px 0px;
-	width: inherit;
-	background-color: #FFF;
+	display: block;
+	width: 100%;
 	box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
 	-moz-box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
 	-webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
@@ -65,28 +67,62 @@ p {  color: #555; line-height: 1.5em; text-align: justify; font-size: 0.875em; }
 	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000'); /* For IE 5.5 - 7 */
 }
 .topic{
+	overflow: auto;
+	display: block;
+	background-color: #FFF;
 	padding: 12px;
 }
+.topic a { text-decoration: none; }
 .topic:nth-child(even) { background-color: #F2F9FF; }
 .topic:hover{ background-color: #FFE8D8; }
 .topicTitle{
-	font-size: 1.25em;
-	padding: 0px 0px 4px 0px;
-	color: #00adee;
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+	overflow: hidden;
+	max-height: 2.05em;
+	font-size: 1.0em;
+	font-weight: bold;
 	display: block;
+	color: #00adee;
 }
 .topicDescription{
-	padding: 4px 0px 4px 0px;
-	font-size: 0.875em;
-	color: #555;
+	font-size: .75em;
+	font-weight: bold;
+	color: #999;
+	padding: 6px 0px;
+	text-decoration: none;
 }
 .topicHistory{
-	display: inline-block;
-	padding: 4px 0px;
+	margin-top: 2px;
 	float: right;
+	font-size: .75em;
+	color: #999;
+}
+
+
+.solvedSpan{
+	font-size: .75em;
 	font-weight: bold;
-	font-size: 0.875em;
 	color: #333;
+	padding: 4px 0px 0px 0px;
+	text-decoration: none;
+	float: right;
+}
+.solvedIcon{
+	float: right;
+	width: 12px;
+	height: 12px;
+	background-image: url("../img/solved.png");
+	margin: 2px 0px 0px 4px;
+	display: block;
+}
+.unsolvedIcon{
+	float: right;
+	width: 12px;
+	height: 12px;
+	background-image: url("../img/unsolved.png");
+	margin: 2px 0px 0px 4px;
+	display: block;
 }
 
 @media only screen and (max-width : 640px) {

@@ -53,6 +53,12 @@
 	
 	
 	<div class="wrapper">
+		<div id="flashAlertDiv"  onclick="hideAlert()">
+			<div id="flash_alert">
+				You were not able to succussfully log in.
+			</div>
+			<div class="exitButton"></div>
+		</div>
 		<h1>Log In</h1>
 		<h3>Join the iPoolsAZ Community Today!</h3>
 		<div class="logDiv">
@@ -87,5 +93,10 @@
 	</div>
 	<div class="break"></div>
 	<div class="footer">Copyright (c) 2013 ipoolsaz.com | 1.480.495.2334 | Pool Service | Maintenance | Supplies</div>
+	<script>
+		function hideAlert() {
+			document.getElementById("flashAlertDiv").style.display = "none";
+		}
+	</script>
 </body>
 </html>
