@@ -9,7 +9,45 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/global.css">
 	<link rel="stylesheet" href="css/home.css"> <!--change this per html page-->
-	<!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/responsiveslides.css">
+	<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="js/magnific-popup.js"></script>
+	<script type="text/javascript" src="js/responsiveslides.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+				disableOn: 0,
+				type: 'iframe',
+				mainClass: 'mfp-fade',
+				removalDelay: 160,
+				preloader: false,
+				fixedContentPos: false
+			});
+			$.extend(true, $.magnificPopup.defaults, {  
+				iframe: {
+					patterns: {
+					   youtube: {
+						  index: 'youtube.com/', 
+						  id: 'v=', 
+						  src: 'http://www.youtube.com/embed/%id%?autoplay=1' 
+					  }
+					}
+				}
+			});
+		});
+		$(function () {
+			// Slideshow
+			$("#slider").responsiveSlides({
+				auto: true,
+				pager: false,
+				nav: true,
+				speed: 500,
+				namespace: "callbacks"
+			});
+		});
+		
+	</script>
 </head>
 <body>
 	<!--Navigation Bar-->
@@ -63,8 +101,21 @@
 		
 		<div id="article">
 			<!--Basic slideshow goes here-->
-			<div id="slideShow">
-				<img src="img/pool.png" />
+			<div class="callbacks_container">
+				<ul class="rslides" id="slider">
+					<li>
+						<a href="#" >
+							<img src="img/pool.png" alt="">
+							<p class="caption">This is a caption</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" >
+							<img src="img/nullVid.png" alt="">
+							<p class="caption">This is a caption</p>
+						</a>
+					</li>
+				</ul>
 			</div>
 			<!--All news articles (including video posts) go here-->
 			<div id="news">
@@ -147,30 +198,64 @@
 				<a href="#"><span class="postTime">...read more</span></a>
 				<div class="break"></div>
 			</div>
+			<div class="tipOfTheWeek">
+				<h2>Tip of the Week</h2>
+				<h3>By Roger Neill</h3>
+				<div class="divShadow">
+					<h1>Tip Title</h1>
+					<h2>Date Submitted: [mm/dd/yyyy]</h2>
+					<ul>
+						<li>
+							The of the week will be placed here. Users
+							can check this as often as they would like.
+							Admins will be given the ability to change
+							it whenever.
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="break"></div>
 			<!--The side video content goes here-->
 			<div class="latestVids">
 				<h2>Latest Videos</h2>
 				<h3>Professional demonstrations</h3>
 				<div class="break"></div>
-				<div class="recentVid">
-					<img class="preview" src="img/nullVid.png" />
-					<h4>The video title goes here</h4>
+				
+				<div class="vDiv">
+					<a class="popup-youtube" href="http://www.youtube.com/watch?v=3onG_EmPfRY">
+						<img class="vSample" src="img/nullVid.png" />
+					</a>
+					<span class="vTitle">This is just a place holder for a video title from youtube</span>
+					<span class="vViews">297 views</span>
+					<span class="vTime">3 days ago</span>
+					<div class="break"></div>
 				</div>
-				<div class="recentVid">
-					<img class="preview" src="img/nullVid.png" />
-					<h4>The video title goes here</h4>
+				<div class="vDiv">
+					<a class="popup-youtube" href="http://www.youtube.com/watch?v=3onG_EmPfRY">
+						<img class="vSample" src="img/nullVid.png" />
+					</a>
+					<span class="vTitle">This is just a place holder for a video title from youtube</span>
+					<span class="vViews">297 views</span>
+					<span class="vTime">3 days ago</span>
+					<div class="break"></div>
 				</div>
-				<div class="recentVid">
-					<img class="preview" src="img/nullVid.png" />
-					<h4>The video title goes here</h4>
+				<div class="vDiv">
+					<a class="popup-youtube" href="http://www.youtube.com/watch?v=3onG_EmPfRY">
+						<img class="vSample" src="img/nullVid.png" />
+					</a>
+					<span class="vTitle">This is just a place holder for a video title from youtube</span>
+					<span class="vViews">297 views</span>
+					<span class="vTime">3 days ago</span>
+					<div class="break"></div>
 				</div>
-				<div class="recentVid">
-					<img class="preview" src="img/nullVid.png" />
-					<h4>The video title goes here</h4>
-				</div>
-				<div class="recentVid">
-					<img class="preview" src="img/nullVid.png" />
-					<h4>The video title goes here</h4>
+				<div class="vDiv">
+					<a class="popup-youtube" href="http://www.youtube.com/watch?v=3onG_EmPfRY">
+						<img class="vSample" src="img/nullVid.png" />
+					</a>
+					<span class="vTitle">This is just a place holder for a video title from youtube</span>
+					<span class="vViews">297 views</span>
+					<span class="vTime">3 days ago</span>
+					<div class="break"></div>
 				</div>
 			</div>
 		</div>
