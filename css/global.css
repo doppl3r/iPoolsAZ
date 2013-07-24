@@ -33,6 +33,7 @@ body {
 
 /*Drop-down nav bar*/
 .header ul {
+	z-index: 9999;
   display: inline-block;
   font-size: 1.0em;
   font-weight: bold;
