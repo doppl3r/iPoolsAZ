@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="css/responsiveslides.css">
 	<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
 	<script type="text/javascript" src="js/magnific-popup.js"></script>
-	<script type="text/javascript" src="js/responsiveslides.min.js"></script>
+	<script type="text/javascript" src="js/responsiveslides.js"></script>
 	<script>
 		$(document).ready(function() {
 			$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
@@ -39,10 +39,47 @@
 			$("#slider").responsiveSlides({
 				auto: true,
 				pager: false,
+				pause: true,
 				nav: true,
 				speed: 500,
-				namespace: "callbacks"
+				timeout: 3500,
+				namespace: "callbacks",
+				before: function(){},   // Function: Before callback
+				after: function(){}     // Function: After callback
 			});
+			
+			
+			//$(window).resize(function(){
+			//	$(".callbacks img").each(function(){
+			//		$(this).load(function(){
+			//			var $img = $('.callbacks img');
+			//			var h = $img.height();
+			//			$img.css('margin-top', + h / -2 + "px");
+			//		});
+			//	});
+			//});
+			
+			
+			//$(".callbacks img").each(function(){
+			//	$(this).load(function(){
+			//		var width = $(this).width();
+			//		var height = $(this).height();
+			//		var top = 0;
+			//		var left = 0;
+			//		
+			//		if(width > height) {
+			//			top = (320/2)-(height/2);
+			//			$(this).css("width", "100%");
+			//			$(this).css("height","auto");
+			//			$(this).css("top",top);
+			//		}
+			//		else {
+			//			//$(this).css("width", "100%");
+			//			//$(this).css("height", "auto");
+			//		}
+			//		
+			//	});
+			//});
 		});
 		
 	</script>
@@ -102,16 +139,23 @@
 			<div class="callbacks_container">
 				<ul class="rslides" id="slider">
 					<li>
-						<a href="#" >
+						<a href="#">
 							<img src="img/pool.png" alt="">
-							<p class="caption">This is a caption</p>
 						</a>
+						<p class="caption">This is a caption</p>
+						
 					</li>
 					<li>
-						<a href="#" >
-							<img src="img/nullVid.png" alt="">
-							<p class="caption">This is a caption</p>
+						<a class="popup-youtube" href="http://www.youtube.com/watch?v=3onG_EmPfRY">
+							<img src="img/test.png" alt="">
 						</a>
+						<p class="caption">This is a caption</p>
+					</li>
+					<li>
+						<a class="popup-youtube" href="http://www.youtube.com/watch?v=3onG_EmPfRY">
+							<img src="img/profile_null.png" alt="">
+						</a>
+						<p class="caption">This is a caption</p>
 					</li>
 				</ul>
 			</div>

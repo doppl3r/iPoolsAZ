@@ -1,0 +1,60 @@
+.wrapper {
+	display: block;
+	margin: 0px auto 0px auto; /*centers everything to the window width*/
+	padding: 12px 12px 12px 12px;
+	max-width: 640px;
+	min-width: 296px;
+}
+
+
+
+h1 { color: #00adee; margin: 12px 0px 0px 0px; }
+h2 { color: #333; font-size: 1.25em; }
+h3 { color: #777; font-size: 1.0em; }
+h4 { color: #00adee; margin: 6px 0px 12px 0px;}
+p {  color: #555; line-height: 1.5em; font-size: 0.875em; margin-bottom: 12px; }
+
+/* This is where the articles will populate*/
+.articleIndex {
+	display: block;
+	width: 100%;
+}
+.articleIndexRight span {
+	color:#00adee;
+	font-size: 12px;
+	font-weight: bold;
+}
+.articleIndexRight p { display: inline; }
+.articleIndexLeft {
+	display: table-cell;
+	width: 40%;
+	padding-right: 12px;
+	vertical-align: top;
+}
+.articleIndexLeft img {
+	margin: 0px 0px 2px 0px;
+	width: 100%;
+}
+.articleIndexRight {
+	display: table-cell;
+	width: 60%;
+}
+
+/* These styles are for individual article styles */
+.articleDiv {
+	
+}
+.articleDiv img {
+	width: 100%;
+}
+.articleDiv span {
+	font-size: 12px;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+	color: #FFF;
+}
+
+@media only screen and (max-width : 664px) {
+	
+}
